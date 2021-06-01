@@ -65,6 +65,7 @@
         android:layout_marginBottom="24dp"
         android:scaleX="0.5"
         android:scaleY="0.5"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/fos_shell"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
