@@ -7,7 +7,7 @@
     tools:context=".school_front_corridor">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/front_corridor_im"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/front_corridor_shell" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/fc_computer_guy_im"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/front_corridor_computer_guy" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/fc_door"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,7 +37,7 @@
         app:srcCompat="@drawable/front_corridor_door" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/fc_mailboxes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

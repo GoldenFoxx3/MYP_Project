@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,10 +28,16 @@ public class textbox_and_characters extends Fragment {
         getActivity().setRequestedOrientation(
                 ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         TextView textBox = getView().findViewById(R.id.textbox_text);
-        ImageView to_school = getView().findViewById(R.id.imageView5);
+        ImageView ctc = getView().findViewById(R.id.click_to_continue_im);
 
         textBox.setText("Here's the school...");
-        to_school.setOnClickListener(v -> into_school());
+        ctc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchCase();
+            }
+        });
+
         GlobalClass appState = ((GlobalClass)getActivity().getApplicationContext());
         int n = appState.getN();
         }
@@ -39,10 +48,6 @@ public class textbox_and_characters extends Fragment {
         return inflater.inflate(R.layout.fragment_textbox_and_characters, container, false);
     }
 
-    private void into_school() {
-        Intent x = new Intent(getActivity(), school_front_corridor.class);
-        startActivity(x);
-    }
     private void switchCase() {
         TextView textBox = getView().findViewById(R.id.textbox_text);
                 switch (textBox.getText().toString()){

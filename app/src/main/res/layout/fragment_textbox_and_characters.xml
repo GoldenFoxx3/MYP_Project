@@ -8,6 +8,7 @@
     tools:context=".textbox_and_characters">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tandc_lo"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -15,20 +16,19 @@
             android:id="@+id/character_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="368dp"
+            android:layout_marginEnd="432dp"
+            android:layout_marginBottom="28dp"
             android:scaleX="0.7"
             android:scaleY="0.7"
             android:src="@drawable/myp_mc_take_2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <ImageView
             android:id="@+id/text_box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="28dp"
+            android:layout_marginTop="172dp"
             android:src="@drawable/text_box"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
@@ -38,38 +38,39 @@
             android:id="@+id/name_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.157"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.709" />
+            android:layout_marginTop="78dp"
+            android:layout_marginBottom="186dp"
+            android:text="Some guy who is you"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_box"
+            app:layout_constraintEnd_toEndOf="@+id/text_box"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="@+id/text_box"
+            app:layout_constraintTop_toTopOf="@+id/text_box"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/textbox_text"
-            android:text="Here's the school..."
             android:layout_width="500dp"
             android:layout_height="75dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.32"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.913" />
+            android:layout_marginTop="112dp"
+            android:text="Here's the school..."
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_box"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="@+id/text_box"
+            app:layout_constraintTop_toTopOf="@+id/text_box" />
 
         <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleX="0.5"
-            android:scaleY="0.5"
-            app:layout_constraintBottom_toBottomOf="@+id/text_box"
+            android:id="@+id/click_to_continue_im"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.595"
-            app:srcCompat="@drawable/up_arrow" />
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
