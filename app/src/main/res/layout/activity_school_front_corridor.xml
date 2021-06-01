@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -52,11 +52,15 @@
         android:id="@+id/fc_to_lft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
         android:layout_marginTop="248dp"
         android:layout_marginEnd="572dp"
+        android:layout_marginBottom="73dp"
         android:scaleX="0.75"
         android:scaleY="0.75"
+        app:layout_constraintBottom_toBottomOf="@+id/front_corridor_im"
         app:layout_constraintEnd_toEndOf="@+id/front_corridor_im"
+        app:layout_constraintStart_toStartOf="@+id/front_corridor_im"
         app:layout_constraintTop_toTopOf="@+id/front_corridor_im"
         app:srcCompat="@drawable/left_arrow" />
 
@@ -66,21 +70,27 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="576dp"
         android:layout_marginTop="248dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="73dp"
         android:scaleX="0.75"
         android:scaleY="0.75"
+        app:layout_constraintBottom_toBottomOf="@+id/front_corridor_im"
+        app:layout_constraintEnd_toEndOf="@+id/front_corridor_im"
         app:layout_constraintStart_toStartOf="@+id/front_corridor_im"
         app:layout_constraintTop_toTopOf="@+id/front_corridor_im"
         app:srcCompat="@drawable/right_arrow" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/fc_to_fos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="315dp"
+        android:layout_marginTop="317dp"
         android:layout_marginEnd="316dp"
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="@+id/front_corridor_im"
         app:layout_constraintEnd_toEndOf="@+id/front_corridor_im"
         app:layout_constraintStart_toStartOf="@+id/front_corridor_im"
+        app:layout_constraintTop_toTopOf="@+id/front_corridor_im"
         app:srcCompat="@drawable/down_arrow" />
 </androidx.constraintlayout.widget.ConstraintLayout>

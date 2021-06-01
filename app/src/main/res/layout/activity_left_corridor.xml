@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".left_corridor">
 
+    <ImageView
+        android:id="@+id/left_corridor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_corridor_shell" />
+
+    <ImageView
+        android:id="@+id/lc_to_fc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="559dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="28dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        app:layout_constraintBottom_toBottomOf="@+id/left_corridor"
+        app:layout_constraintEnd_toEndOf="@+id/left_corridor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/left_corridor"
+        app:layout_constraintTop_toTopOf="@+id/left_corridor"
+        app:srcCompat="@drawable/right_arrow" />
+
+    <ImageView
+        android:id="@+id/lc_to_bc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="359dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="129dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        app:layout_constraintBottom_toBottomOf="@+id/left_corridor"
+        app:layout_constraintEnd_toEndOf="@+id/left_corridor"
+        app:layout_constraintStart_toStartOf="@+id/left_corridor"
+        app:layout_constraintTop_toTopOf="@+id/left_corridor"
+        app:srcCompat="@drawable/right_arrow" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
