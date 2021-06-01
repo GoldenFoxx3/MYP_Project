@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MYP_Project">
-        <activity android:name=".school_front_corridor"
-            android:screenOrientation="landscape">
-        </activity>
+        <activity android:name=".back_corridor"></activity>
+        <activity android:name=".right_corridor" />
+        <activity android:name=".left_corridor" />
+        <activity
+            android:name=".school_front_corridor"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".front_of_school"
             android:screenOrientation="landscape" />
