@@ -19,7 +19,7 @@ public class textbox_and_characters extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActivity().setRequestedOrientation(
-                ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+                ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
 
     @Override
